@@ -248,7 +248,7 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
     '</block>' +
     '<block type="sound_volume" id="sound_volume"></block>' +
   '</category>' +
-  '<category name="%{BKY_CATEGORY_EVENTS}" id="events" colour="#FFD500" secondaryColour="#CC9900">' +
+  '<category name="%{BKY_CATEGORY_EVENTS}" id="events" colour="#FFAB19" secondaryColour="#CF8B17">' +
     '<block type="event_whenflagclicked" id="event_whenflagclicked"></block>' +
     '<block type="event_whenkeypressed" id="event_whenkeypressed">' +
     '</block>' +
@@ -275,7 +275,7 @@ Blockly.Blocks.defaultToolbox = '<xml id="toolbox-categories" style="display: no
       '</value>' +
     '</block>' +
   '</category>' +
-  '<category name="%{BKY_CATEGORY_CONTROL}" id="control" colour="#FFAB19" secondaryColour="#CF8B17">' +
+  '<category name="%{BKY_CATEGORY_CONTROL}" id="control" colour="#FFD500" secondaryColour="#CC9900">' +
     '<block type="control_wait" id="control_wait">' +
       '<value name="DURATION">' +
         '<shadow type="math_positive_number">' +

@@ -38,8 +38,8 @@ Blockly.Blocks['extension_pen_down'] = {
         {
           "type": "field_image",
           "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/pen-block-icon.svg",
-          "width": 40,
-          "height": 40
+          "width": 24,
+          "height": 24
         },
         {
           "type": "field_vertical_separator"
@@ -62,8 +62,8 @@ Blockly.Blocks['extension_music_drum'] = {
         {
           "type": "field_image",
           "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/music-block-icon.svg",
-          "width": 40,
-          "height": 40
+          "width": 24,
+          "height": 24
         },
         {
           "type": "field_vertical_separator"
@@ -90,8 +90,8 @@ Blockly.Blocks['extension_wedo_motor'] = {
         {
           "type": "field_image",
           "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/wedo2-block-icon.svg",
-          "width": 40,
-          "height": 40
+          "width": 24,
+          "height": 24
         },
         {
           "type": "field_vertical_separator"
@@ -120,8 +120,8 @@ Blockly.Blocks['extension_wedo_hat'] = {
         {
           "type": "field_image",
           "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/wedo2-block-icon.svg",
-          "width": 40,
-          "height": 40
+          "width": 24,
+          "height": 24
         },
         {
           "type": "field_vertical_separator"
@@ -144,8 +144,8 @@ Blockly.Blocks['extension_wedo_boolean'] = {
         {
           "type": "field_image",
           "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/wedo2-block-icon.svg",
-          "width": 40,
-          "height": 40
+          "width": 24,
+          "height": 24
         },
         {
           "type": "field_vertical_separator"
@@ -168,8 +168,8 @@ Blockly.Blocks['extension_wedo_tilt_reporter'] = {
         {
           "type": "field_image",
           "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/wedo2-block-icon.svg",
-          "width": 40,
-          "height": 40
+          "width": 24,
+          "height": 24
         },
         {
           "type": "field_vertical_separator"
@@ -220,8 +220,8 @@ Blockly.Blocks['extension_music_reporter'] = {
         {
           "type": "field_image",
           "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/music-block-icon.svg",
-          "width": 40,
-          "height": 40
+          "width": 24,
+          "height": 24
         },
         {
           "type": "field_vertical_separator"
@@ -244,8 +244,8 @@ Blockly.Blocks['extension_microbit_display'] = {
         {
           "type": "field_image",
           "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/microbit-block-icon.svg",
-          "width": 40,
-          "height": 40
+          "width": 24,
+          "height": 24
         },
         {
           "type": "field_vertical_separator"

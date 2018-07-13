@@ -246,7 +246,6 @@ Blockly.Css.CONTENT = [
     'box-shadow: 0px 0px 8px 1px ' + Blockly.Colours.dropDownShadow + ';',
     'padding: 4px;',
     '-webkit-user-select: none;',
-    'min-height: 26px',
   '}',
 
   '.blocklyDropDownContent {',
@@ -819,7 +818,7 @@ Blockly.Css.CONTENT = [
   '}',
 
   '.blocklyContextMenu {',
-    'border-radius: 4px;',
+    'border-radius: 0;',
   '}',
 
   '.blocklyDropdownMenu {',
@@ -1016,15 +1015,13 @@ Blockly.Css.CONTENT = [
    */
 
   '.blocklyWidgetDiv .goog-menu {',
-    'background: #fff;',
-    'border-color: #ccc #666 #666 #ccc;',
-    'border-style: solid;',
-    'border-width: 1px;',
+    'background: #A0A0A0;',
+    'box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);',
     'cursor: default;',
-    'font: normal 13px "Helvetica Neue", Helvetica, sans-serif;',
+    'font: normal 11px "Helvetica Neue", Helvetica, sans-serif;',
     'margin: 0;',
+    'margin-left: 1px;',
     'outline: none;',
-    'padding: 4px 0;',
     'position: absolute;',
     'overflow-y: auto;',
     'overflow-x: hidden;',
@@ -1068,12 +1065,12 @@ Blockly.Css.CONTENT = [
    * #noflip to .goog-menuitem.
    */
   '.blocklyWidgetDiv .goog-menuitem {',
-    'color: #000;',
-    'font: normal 13px "Helvetica Neue", Helvetica, sans-serif;',
+    'color: #fff;',
+    'font: normal 12px "Helvetica Neue", Helvetica, sans-serif;',
     'list-style: none;',
     'margin: 0;',
      /* 28px on the left for icon or checkbox; 7em on the right for shortcut. */
-    'padding: 4px 7em 4px 28px;',
+    'padding: 8px 12px 8px 24px;',
     'white-space: nowrap;',
   '}',
 
@@ -1083,7 +1080,6 @@ Blockly.Css.CONTENT = [
     'font-weight: bold;',
     'list-style: none;',
     'margin: 0;',
-    'min-height: 24px;',
      /* 28px on the left for icon or checkbox; 7em on the right for shortcut. */
     'padding: 4px 7em 4px 28px;',
     'white-space: nowrap;',
@@ -1139,14 +1135,15 @@ Blockly.Css.CONTENT = [
   /* State: hover. */
   '.blocklyWidgetDiv .goog-menuitem-highlight,',
   '.blocklyWidgetDiv .goog-menuitem-hover {',
-    'background-color: #d6e9f8;',
+    'background-color: #E5E5E5;',
      /* Use an explicit top and bottom border so that the selection is visible',
       * in high contrast mode. */
-    'border-color: #d6e9f8;',
+    'border-color: #E5E5E5;',
     'border-style: dotted;',
     'border-width: 1px 0;',
-    'padding-bottom: 3px;',
-    'padding-top: 3px;',
+    'color: #4C4C4C;',
+    'padding-bottom: 7px;',
+    'padding-top: 7px;',
   '}',
 
   '.blocklyDropDownDiv .goog-menuitem-highlight,',

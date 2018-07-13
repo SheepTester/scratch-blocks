@@ -42,7 +42,7 @@ Blockly.BlockSvg.GRID_UNIT = 4;
  * Horizontal space between elements.
  * @const
  */
-Blockly.BlockSvg.SEP_SPACE_X = 2 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.SEP_SPACE_X = 2 * Blockly.BlockSvg.GRID_UNIT; // ideally 1 between text and inputs, but ruins the side padding
 
 /**
  * Vertical space between elements.
@@ -54,62 +54,62 @@ Blockly.BlockSvg.SEP_SPACE_Y = 2 * Blockly.BlockSvg.GRID_UNIT;
  * Minimum width of a block.
  * @const
  */
-Blockly.BlockSvg.MIN_BLOCK_X = 16 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.MIN_BLOCK_X = 13 * Blockly.BlockSvg.GRID_UNIT; // INTENDED
 
 /**
  * Minimum width of a block with output (reporters).
  * @const
  */
-Blockly.BlockSvg.MIN_BLOCK_X_OUTPUT = 12 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.MIN_BLOCK_X_OUTPUT = 0 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Minimum width of a shadow block with output (single fields).
  * @const
  */
-Blockly.BlockSvg.MIN_BLOCK_X_SHADOW_OUTPUT = 10 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.MIN_BLOCK_X_SHADOW_OUTPUT = 5 * Blockly.BlockSvg.GRID_UNIT; // INTENDED
 
 /**
  * Minimum height of a block.
  * @const
  */
-Blockly.BlockSvg.MIN_BLOCK_Y = 12 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.MIN_BLOCK_Y = 7 * Blockly.BlockSvg.GRID_UNIT; // (2.0: height 24 + notch is 4)
 
 /**
  * Height of extra row after a statement input.
  * @const
  */
-Blockly.BlockSvg.EXTRA_STATEMENT_ROW_Y = 8 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.EXTRA_STATEMENT_ROW_Y = 5 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Minimum width of a C- or E-shaped block.
  * @const
  */
-Blockly.BlockSvg.MIN_BLOCK_X_WITH_STATEMENT = 40 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.MIN_BLOCK_X_WITH_STATEMENT = 20 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Minimum height of a shadow block with output and a single field.
  * This is used for shadow blocks that only contain a field - which are smaller than even reporters.
  * @const
  */
-Blockly.BlockSvg.MIN_BLOCK_Y_SINGLE_FIELD_OUTPUT = 8 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.MIN_BLOCK_Y_SINGLE_FIELD_OUTPUT = 0 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Minimum height of a non-shadow block with output, i.e. a reporter.
  * @const
  */
-Blockly.BlockSvg.MIN_BLOCK_Y_REPORTER = 10 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.MIN_BLOCK_Y_REPORTER = 7 * Blockly.BlockSvg.GRID_UNIT; // INTENDED
 
 /**
  * Minimum space for a statement input height.
  * @const
  */
-Blockly.BlockSvg.MIN_STATEMENT_INPUT_HEIGHT = 6 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.MIN_STATEMENT_INPUT_HEIGHT = 3 * Blockly.BlockSvg.GRID_UNIT; // INTENDED
 
 /**
  * Width of vertical notch.
  * @const
  */
-Blockly.BlockSvg.NOTCH_WIDTH = 8 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.NOTCH_WIDTH = 6 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Height of vertical notch.
@@ -146,7 +146,7 @@ Blockly.BlockSvg.START_HAT_HEIGHT = 16;
  * of a block, such as extension icons.
  * @const
  */
-Blockly.BlockSvg.ICON_SEPARATOR_HEIGHT = 10 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.ICON_SEPARATOR_HEIGHT = 6 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Path of the top hat's curve.
@@ -160,11 +160,11 @@ Blockly.BlockSvg.START_HAT_PATH = 'c 25,-22 71,-22 96,0';
  */
 Blockly.BlockSvg.NOTCH_PATH_LEFT = (
   'c 2,0 3,1 4,2 ' +
-  'l 4,4 ' +
+  'l 2,2 ' +
   'c 1,1 2,2 4,2 ' +
-  'h 12 ' +
+  'h 8 ' +
   'c 2,0 3,-1 4,-2 ' +
-  'l 4,-4 ' +
+  'l 2,-2 ' +
   'c 1,-1 2,-2 4,-2'
 );
 
@@ -174,11 +174,11 @@ Blockly.BlockSvg.NOTCH_PATH_LEFT = (
  */
 Blockly.BlockSvg.NOTCH_PATH_RIGHT = (
   'c -2,0 -3,1 -4,2 ' +
-  'l -4,4 ' +
+  'l -2,2 ' +
   'c -1,1 -2,2 -4,2 ' +
-  'h -12 ' +
+  'h -8 ' +
   'c -2,0 -3,-1 -4,-2 ' +
-  'l -4,-4 ' +
+  'l -2,-2 ' +
   'c -1,-1 -2,-2 -4,-2'
 );
 
@@ -260,20 +260,20 @@ Blockly.BlockSvg.INNER_BOTTOM_LEFT_CORNER =
  * @const
  */
 Blockly.BlockSvg.INPUT_SHAPE_HEXAGONAL =
-    'M ' + 4 * Blockly.BlockSvg.GRID_UNIT + ',0 ' +
+    'M ' + 2.5 * Blockly.BlockSvg.GRID_UNIT + ',-1 ' +
     ' h ' + 4 * Blockly.BlockSvg.GRID_UNIT +
-    ' l ' + 4 * Blockly.BlockSvg.GRID_UNIT + ',' + 4 * Blockly.BlockSvg.GRID_UNIT +
-    ' l ' + -4 * Blockly.BlockSvg.GRID_UNIT + ',' + 4 * Blockly.BlockSvg.GRID_UNIT +
+    ' l ' + 2.5 * Blockly.BlockSvg.GRID_UNIT + ',' + 2.5 * Blockly.BlockSvg.GRID_UNIT +
+    ' l ' + -2.5 * Blockly.BlockSvg.GRID_UNIT + ',' + 2.5 * Blockly.BlockSvg.GRID_UNIT +
     ' h ' + -4 * Blockly.BlockSvg.GRID_UNIT +
-    ' l ' + -4 * Blockly.BlockSvg.GRID_UNIT + ',' + -4 * Blockly.BlockSvg.GRID_UNIT +
-    ' l ' + 4 * Blockly.BlockSvg.GRID_UNIT + ',' + -4 * Blockly.BlockSvg.GRID_UNIT +
+    ' l ' + -2.5 * Blockly.BlockSvg.GRID_UNIT + ',' + -2.5 * Blockly.BlockSvg.GRID_UNIT +
+    ' l ' + 2.5 * Blockly.BlockSvg.GRID_UNIT + ',' + -2.5 * Blockly.BlockSvg.GRID_UNIT +
     ' z';
 
 /**
  * Width of empty boolean input shape.
  * @const
  */
-Blockly.BlockSvg.INPUT_SHAPE_HEXAGONAL_WIDTH = 12 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.INPUT_SHAPE_HEXAGONAL_WIDTH = 9 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * SVG path for an empty square input shape.
@@ -305,59 +305,59 @@ Blockly.BlockSvg.INPUT_SHAPE_ROUND =
   'M ' + (4 * Blockly.BlockSvg.GRID_UNIT) + ',0' +
   ' h ' + (4 * Blockly.BlockSvg.GRID_UNIT) +
   ' a ' + (4 * Blockly.BlockSvg.GRID_UNIT) + ' ' +
-      (4 * Blockly.BlockSvg.GRID_UNIT) + ' 0 0 1 0 ' + (8 * Blockly.BlockSvg.GRID_UNIT) +
+      (4 * Blockly.BlockSvg.GRID_UNIT) + ' 0 0 1 0 ' + (0 * Blockly.BlockSvg.GRID_UNIT) +
   ' h ' + (-4 * Blockly.BlockSvg.GRID_UNIT) +
   ' a ' + (4 * Blockly.BlockSvg.GRID_UNIT) + ' ' +
-      (4 * Blockly.BlockSvg.GRID_UNIT) + ' 0 0 1 0 -' + (8 * Blockly.BlockSvg.GRID_UNIT) +
+      (4 * Blockly.BlockSvg.GRID_UNIT) + ' 0 0 1 0 -' + (0 * Blockly.BlockSvg.GRID_UNIT) +
   ' z';
 
 /**
  * Width of empty round input shape.
  * @const
  */
-Blockly.BlockSvg.INPUT_SHAPE_ROUND_WIDTH = 12 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.INPUT_SHAPE_ROUND_WIDTH = 0 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Height of empty input shape.
  * @const
  */
-Blockly.BlockSvg.INPUT_SHAPE_HEIGHT = 8 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.INPUT_SHAPE_HEIGHT = 4 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Height of user inputs
  * @const
  */
-Blockly.BlockSvg.FIELD_HEIGHT = 8 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.FIELD_HEIGHT = 5 * Blockly.BlockSvg.GRID_UNIT; // ACTUALLY DETERMINES THE STRING INPUT HEIGHTS
 
 /**
  * Width of user inputs
  * @const
  */
-Blockly.BlockSvg.FIELD_WIDTH = 6 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.FIELD_WIDTH = 0 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Editable field padding (left/right of the text).
  * @const
  */
-Blockly.BlockSvg.EDITABLE_FIELD_PADDING = 6;
+Blockly.BlockSvg.EDITABLE_FIELD_PADDING = 0; // TODO
 
 /**
  * Square box field padding (left/right of the text).
  * @const
  */
-Blockly.BlockSvg.BOX_FIELD_PADDING = 2 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.BOX_FIELD_PADDING = 2 * Blockly.BlockSvg.GRID_UNIT; // INTENDED
 
 /**
  * Drop-down arrow padding.
  * @const
  */
-Blockly.BlockSvg.DROPDOWN_ARROW_PADDING = 2 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.DROPDOWN_ARROW_PADDING = 1 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Minimum width of user inputs during editing
  * @const
  */
-Blockly.BlockSvg.FIELD_WIDTH_MIN_EDIT = 8 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.FIELD_WIDTH_MIN_EDIT = 0 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Maximum width of user inputs during editing
@@ -406,13 +406,13 @@ Blockly.BlockSvg.MAX_DISPLAY_LENGTH = Infinity;
  * Ensures that inputs will not overlap with the top notch of blocks.
  * @const
  */
-Blockly.BlockSvg.INPUT_AND_FIELD_MIN_X = 12 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.INPUT_AND_FIELD_MIN_X = 9 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * Vertical padding around inline elements.
  * @const
  */
-Blockly.BlockSvg.INLINE_PADDING_Y = 1 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.INLINE_PADDING_Y = 1 * Blockly.BlockSvg.GRID_UNIT; // INTENDED (for when reporters are inside reporters)
 
 /**
  * Point size of text field before animation. Must match size in CSS.
@@ -445,12 +445,12 @@ Blockly.BlockSvg.FIELD_TEXTINPUT_ANIMATE_POSITIONING = false;
  * on its left or right edge, that side is extended by the padding specified.
  * See also: `Blockly.BlockSvg.computeOutputPadding_`.
  */
-Blockly.BlockSvg.SHAPE_IN_SHAPE_PADDING = {
+Blockly.BlockSvg.SHAPE_IN_SHAPE_PADDING = { // field is text
   1: { // Outer shape: hexagon.
-    0: 5 * Blockly.BlockSvg.GRID_UNIT, // Field in hexagon.
+    0: 4 * Blockly.BlockSvg.GRID_UNIT, // Field in hexagon.
     1: 2 * Blockly.BlockSvg.GRID_UNIT, // Hexagon in hexagon.
-    2: 5 * Blockly.BlockSvg.GRID_UNIT, // Round in hexagon.
-    3: 5 * Blockly.BlockSvg.GRID_UNIT // Square in hexagon.
+    2: 3 * Blockly.BlockSvg.GRID_UNIT, // Round in hexagon.
+    3: 3 * Blockly.BlockSvg.GRID_UNIT // Square in hexagon.
   },
   2: { // Outer shape: round.
     0: 3 * Blockly.BlockSvg.GRID_UNIT, // Field in round.

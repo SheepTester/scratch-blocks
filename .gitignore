@@ -1,0 +1,21 @@
+# OSX
+.DS_Store
+
+# NPM
+/node_modules
+npm-*
+
+# /accessible/*
+# /dist
+# /msg/js/*
+# !/msg/js/en.js
+# /msg/json/*
+# !/msg/json/en.json
+# /gh-pages/main.js
+# /gh-pages/playgrounds
+# /gh-pages/Gemfile.lock
+# /gh-pages/closure-library
+# /gh-pages/_site
+# /*compiler*.jar
+# /local_blockly_compressed_vertical.js
+/.señor-mcmover
