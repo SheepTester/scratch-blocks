@@ -126,7 +126,7 @@ Blockly.FieldDropdown.prototype.init = function() {
   /** @type {Number} */
   this.arrowX_ = 0;
   /** @type {Number} */
-  this.arrowY_ = 11;
+  this.arrowY_ = 6;
   this.arrow_ = Blockly.utils.createSvgElement('image', {
     'height': this.arrowSize_ + 'px',
     'width': this.arrowSize_ + 'px'
@@ -474,7 +474,7 @@ Blockly.FieldDropdown.prototype.positionArrow = function(x) {
     this.arrowX_ = this.arrowSize_ - Blockly.BlockSvg.DROPDOWN_ARROW_PADDING;
     addedWidth = this.arrowSize_ + Blockly.BlockSvg.DROPDOWN_ARROW_PADDING;
   } else {
-    this.arrowX_ = x + Blockly.BlockSvg.DROPDOWN_ARROW_PADDING / 2;
+    this.arrowX_ = x + Blockly.BlockSvg.DROPDOWN_ARROW_PADDING;
     addedWidth = this.arrowSize_ + Blockly.BlockSvg.DROPDOWN_ARROW_PADDING;
   }
   if (this.box_) {

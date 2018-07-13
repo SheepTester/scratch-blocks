@@ -195,7 +195,7 @@ Blockly.Flyout.prototype.GAP_X = Blockly.Flyout.prototype.MARGIN * 3;
  * element.
  * @const {number}
  */
-Blockly.Flyout.prototype.GAP_Y = Blockly.Flyout.prototype.MARGIN;
+Blockly.Flyout.prototype.GAP_Y = Blockly.Flyout.prototype.MARGIN * 0.5;
 
 /**
  * Top/bottom padding between scrollbar and edge of flyout background.
